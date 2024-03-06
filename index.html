@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="main.css">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <title>Text and Image Overlay Website</title>
 </head>
@@ -39,14 +39,10 @@
             <button type="button" onclick="overlay()">Overlay Text and Image</button>
         </form>
         <div class="image-container">
-            <img id="templateImage" src="{{ url_for('static', filename='template.jpg') }}" alt="Template Image">
+            <img id="templateImage" src="template.jpg" alt="Template Image">
             <div id="overlayContainer" class="overlay-container"></div>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
